@@ -14,7 +14,7 @@ import { toast } from "react-toastify";
 
 interface FormData {
   description: string;
-  amount: string;              // ✅ era number — mudei para string para evitar .replace em number
+  amount: string;              
   date: string;
   type: typeof TRANSACTION_TYPE[keyof typeof TRANSACTION_TYPE];
   categoryId: string;
@@ -22,7 +22,7 @@ interface FormData {
 
 const initialFormData: FormData = {
   description: "",
-  amount: "",                  // ✅ string vazia
+  amount: "",                  
   date: "",
   type: "EXPENSE",
   categoryId: ""
