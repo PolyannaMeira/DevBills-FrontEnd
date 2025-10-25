@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import MonthYearSelector from "../components/MonthYearSelector";
 import { getTransactionSummary } from "../services/transactionService";
 import { getTransactionMontly } from "../services/transactionService";
-import { ArrowUp, Calendar, Divide, TrendingUp, Wallet } from "lucide-react";
+import { ArrowUp, Calendar, TrendingUp, Wallet } from "lucide-react";
 import type { MontlyItem, TransactionSummary } from "../types/transaction";
 import Card from "../components/Card";
 import { formatCurrency } from "../utils/formatters";
@@ -18,7 +18,8 @@ import {
   YAxis,
   Legend,
   Bar,
-  Rectangle,
+  type PieLabelRenderProps,
+  
 } from "recharts";
 
 const initialSummary: TransactionSummary = {
@@ -28,10 +29,7 @@ const initialSummary: TransactionSummary = {
   expenseByCategory: [],
 };
 
-interface ChartLabelProps {
-  categoryName: string;
-  percent: number;
-}
+
 const Dashboard = () => {
   const currenteDate = new Date();
   const [year, setYear] = useState<number>(currenteDate.getFullYear());
@@ -64,9 +62,11 @@ const Dashboard = () => {
     loadTransactionMontly();
   }, [month, year]);
 
-  const renderPieChatLabel = ({ categoryName, percent }: ChartLabelProps): string => {
-    return `${categoryName}: ${(percent * 100).toFixed(1)}%`;
-  };
+  const renderPieChatLabel = ({ name, percent }: PieLabelRenderProps): string => {
+  const pct = Math.round(Number(percent ?? 0) * 1000) / 10; // 0.1% de precisão
+  return `${name ?? ""}: ${pct}%`;
+};
+
 
   const formatToolTipValue = (value: number | string): string => {
     return formatCurrency(typeof value === "number" ? value : 0);
@@ -75,7 +75,7 @@ const Dashboard = () => {
   return (
     <div className="container-app py-6">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
-        <h1 className="texte-2xl font-bold mb-4 md:mb-0">Dashboard</h1>
+        <h1 className="text-2xl font-bold mb-4 md:mb-0">Dashboard</h1>
         <MonthYearSelector
           month={month}
           year={year}

@@ -1,4 +1,4 @@
-import { Children, type ButtonHTMLAttributes, type ReactNode } from "react";
+import { type ButtonHTMLAttributes, type ReactNode } from "react";
 
 type ButtonVariants = "primary" | "outline" | "secondary" | "success" | "danger";
 

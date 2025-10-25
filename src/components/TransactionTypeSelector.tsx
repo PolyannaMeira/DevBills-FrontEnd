@@ -1,19 +1,19 @@
-import { TransactionType } from "../types/transaction";
+import { TRANSACTION_TYPE } from "../types/transaction";
 
 interface TransactionTypeSelectorProps {
-    value: TransactionType;
+    value: typeof TRANSACTION_TYPE[keyof typeof TRANSACTION_TYPE];
     id?:string;
-    onChange?: (type: TransactionType) => void;
+    onChange?: (type: typeof TRANSACTION_TYPE[keyof typeof TRANSACTION_TYPE]) => void;
 }
 const TransactionTypeSelector = ({ value, id, onChange }: TransactionTypeSelectorProps) => {
     const transactionsTypeButtons = [
         
-        { type: TransactionType.EXPENSE, 
+        { type: TRANSACTION_TYPE.EXPENSE, 
           label: "Despesa", 
           activeClasses: "bg-red-500 border-red-500 text-red-700 font-medium" ,
           inactiveClasses:"bg-transparent border-red-300 text-red-500 hover:bg-red-500"},
 
-        { type: TransactionType.INCOME, 
+        { type: TRANSACTION_TYPE.INCOME, 
           label: "Receita", 
           activeClasses: "bg-green-100 border-green-500 text-green-700 font-medium" ,
           inactiveClasses:"bg-transparent border-green-300 text-green-500 hover:bg-green-500"}

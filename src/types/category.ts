@@ -1,10 +1,10 @@
-import type { TransactionType } from "./transaction";
+import { TRANSACTION_TYPE } from "./transaction";
 
 export interface Category{
     id: string;
     name: string;
     color: string; 
-    type: TransactionType;
+    type: typeof TRANSACTION_TYPE[keyof typeof TRANSACTION_TYPE];
     
 }
 

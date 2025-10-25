@@ -4,7 +4,7 @@ import MonthYearSelect from "../components/MonthYearSelector";
 import { useEffect, useMemo, useState } from "react";
 import Input from "../components/Input";
 import Card from "../components/Card";
-import { TransactionType, type Transaction } from "../types/transaction";
+ import { TRANSACTION_TYPE, type Transaction } from "../types/transaction";
 import { getTransactions, deleteTransaction } from "../services/transactionService";
 import Button from "../components/Button";
 import { formatCurrency, formatDate } from "../utils/formatters";
@@ -154,7 +154,7 @@ const Transactions = () => {
                   <tr key={transaction.id} className="hover:bg-gray-700 ">
                     <td className="px-6 py-4 text-sm text-gray-400 whitespace-nowrap">
                       <div className="flex items-center gap-2">
-                        {transaction.type === TransactionType.INCOME ? (
+                        {transaction.type === TRANSACTION_TYPE.INCOME ? (
                           <ArrowUp className="w-4 h-4 text-primary-500" />
                         ) : (
                           <ArrowDown className="w-4 h-4 text-red-500" />
@@ -183,7 +183,7 @@ const Transactions = () => {
                     <td className="px-3 py-4 whitespace-nowrap">
                       <span
                         className={
-                          transaction.type === TransactionType.INCOME
+                          transaction.type === TRANSACTION_TYPE.INCOME
                             ? "text-primary-500"
                             : "text-red-500"
                         }
