@@ -3,6 +3,12 @@ DevBills - FrontEnd
 Este é o frontend do projeto DevBills, uma aplicação de controle financeiro pessoal desenvolvida para praticar TypeScript e Tailwind CSS.
 O objetivo é gerenciar entradas e saídas financeiras, ajudando o usuário a visualizar e organizar melhor suas finanças.
 
+![Dashboard](../assets/DevBills/Dashboard.png)
+
+![Tela de Login](./assets/DevBills/Tela_de_Login.png)
+
+![Transações](./assets/DevBills/Transações.png)
+
 📘 Sobre o Projeto
 
 O DevBills permite registrar e acompanhar transações financeiras, separando entradas (receitas) e saídas (despesas) de forma simples e visual.
