@@ -20,11 +20,11 @@ O backend do projeto está disponível em:
 
 ⚙️ Tecnologias Utilizadas
 
-React + Vite
+- React + Vite
 
-TypeScript
+- TypeScript
 
-Tailwind CSS
+- Tailwind CSS
 
 Fetch API para integração com o backend
 
@@ -55,13 +55,13 @@ DevBills - BackEnd
 
 O projeto foi desenvolvido para praticar:
 
-Tipagem estática com TypeScript
+- Tipagem estática com TypeScript
 
-Estilização com Tailwind CSS
+- Estilização com Tailwind CSS
 
-Organização de componentes em React
+- Organização de componentes em React
 
-Comunicação entre frontend e backend
+- Comunicação entre frontend e backend
 
 Qualquer duvida ou sugestão:
 polyannaxam@gmail.com
