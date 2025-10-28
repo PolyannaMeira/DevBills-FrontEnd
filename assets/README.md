@@ -12,4 +12,3 @@ Esta pasta contém imagens e capturas de tela usadas no README.md
 - Formatos: PNG, JPG, GIF
 - Tamanho máximo: 1MB por imagem
 - Use nomes em minúsculas e hífens ao invés de espaços
-
