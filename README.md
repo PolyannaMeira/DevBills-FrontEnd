@@ -9,14 +9,14 @@ O DevBills permite registrar e acompanhar transações financeiras, separando en
 
 Este projeto foi criado com foco em aprendizado e prática de:
 
-React com TypeScript
+- React com TypeScript
 
-Tailwind CSS para estilização moderna e responsiva
+- Tailwind CSS para estilização moderna e responsiva
 
-Integração com backend em Node.js e Express
+- Integração com backend em Node.js e Express
 
 O backend do projeto está disponível em:
-👉 DevBills - BackEnd
+👉 https://github.com/PolyannaMeira/DevBills-BackEnd
 
 ⚙️ Tecnologias Utilizadas
 
