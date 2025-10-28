@@ -1,69 +1,67 @@
-# React + TypeScript + Vite
+DevBills - FrontEnd
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o frontend do projeto DevBills, uma aplicação de controle financeiro pessoal desenvolvida para praticar TypeScript e Tailwind CSS.
+O objetivo é gerenciar entradas e saídas financeiras, ajudando o usuário a visualizar e organizar melhor suas finanças.
 
-Currently, two official plugins are available:
+📘 Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O DevBills permite registrar e acompanhar transações financeiras, separando entradas (receitas) e saídas (despesas) de forma simples e visual.
 
-## Expanding the ESLint configuration
+Este projeto foi criado com foco em aprendizado e prática de:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+React com TypeScript
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Tailwind CSS para estilização moderna e responsiva
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Integração com backend em Node.js e Express
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+O backend do projeto está disponível em:
+👉 DevBills - BackEnd
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+⚙️ Tecnologias Utilizadas
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+React + Vite
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+TypeScript
+
+Tailwind CSS
+
+Fetch API para integração com o backend
+
+🚀 Como Instalar e Executar
+1. Clonar o repositório
+git clone https://github.com/PolyannaMeira/DevBills-FrontEnd.git
+
+2. Acessar a pasta do projeto
+cd DevBills-FrontEnd
+
+3. Instalar as dependências
+npm install
+
+4. Executar o projeto em modo de desenvolvimento
+npm run dev
+
+
+O aplicativo estará disponível em:
+
+http://localhost:5173
+
+🔗 Backend
+
+Para o funcionamento completo da aplicação, é necessário executar o backend:
+DevBills - BackEnd
+
+🧩 Objetivo de Aprendizado
+
+O projeto foi desenvolvido para praticar:
+
+Tipagem estática com TypeScript
+
+Estilização com Tailwind CSS
+
+Organização de componentes em React
+
+Comunicação entre frontend e backend
+
+Qualquer duvida ou sugestão:
+polyannaxam@gmail.com
