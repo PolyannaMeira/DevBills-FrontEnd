@@ -5,7 +5,7 @@ O objetivo é gerenciar entradas e saídas financeiras, ajudando o usuário a vi
 
 ![Dashboard](https://github.com/PolyannaMeira/DevBills-FrontEnd/blob/main/public/Dashboard.png)
 
-![Tela de Login](https://github.com/PolyannaMeira/DevBills-FrontEnd/blob/main/public/Tela_de_Login.png).
+![Tela de Login](https://github.com/PolyannaMeira/DevBills-FrontEnd/blob/main/public/Tela%20de%20Login.png)
 
 ![Transações](https://github.com/PolyannaMeira/DevBills-FrontEnd/blob/main/public/Transações.png)
 
